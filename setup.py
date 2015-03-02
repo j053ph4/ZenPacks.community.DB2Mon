@@ -5,7 +5,7 @@
 NAME = "ZenPacks.community.DB2Mon"
 VERSION = "1.0"
 AUTHOR = "Joseph Anderson"
-LICENSE = ""
+LICENSE = "Apache"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
 PACKAGES = ['ZenPacks', 'ZenPacks.community', 'ZenPacks.community.DB2Mon']
 INSTALL_REQUIRES = ['ZenPacks.community.RDBMS>=2.4', 'ZenPacks.community.SQLDataSource>=2.0', 'ZenPacks.community.deviceAdvDetail>=2.7']

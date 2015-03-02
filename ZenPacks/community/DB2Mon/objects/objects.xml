@@ -462,6 +462,12 @@ True
 </tomanycont>
 <tomanycont id='thresholds'>
 <object id='Table Space Full' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Perf/DB
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
 <property label="DataPoints" type="lines" id="dsnames" mode="w" >
 ['sizeUsed_percentUsed']
 </property>
@@ -471,17 +477,17 @@ True
 <property type="string" id="maxval" mode="w" >
 97
 </property>
-<property type="string" id="eventClass" mode="w" >
-/Perf/DB
-</property>
-<property type="int" id="severity" mode="w" >
-3
-</property>
 <property type="int" id="escalateCount" mode="w" >
 0
 </property>
 </object>
 <object id='status' module='ZenPacks.community.deviceAdvDetail.thresholds.StatusThreshold' class='StatusThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Change/Set/Status
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
 <property label="DataPoints" type="lines" id="dsnames" mode="w" >
 ['sizeUsed_status']
 </property>
@@ -524,6 +530,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directReads' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -1013,6 +1022,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directReadReqs' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -1183,6 +1195,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directReadTime' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -1382,6 +1397,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='unreadPrefetchPages' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -1431,8 +1449,14 @@ False
 <property type="boolean" id="hasSummary" mode="w" >
 True
 </property>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <tomanycont id='graphPoints'>
 <object id='percentUsed' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -1487,6 +1511,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directWrites' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -3050,6 +3077,12 @@ True
 </tomanycont>
 <tomanycont id='thresholds'>
 <object id='status' module='ZenPacks.community.deviceAdvDetail.thresholds.StatusThreshold' class='StatusThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Change/Set/Status
+</property>
+<property type="int" id="severity" mode="w" >
+3
+</property>
 <property label="DataPoints" type="lines" id="dsnames" mode="w" >
 ['getStatus_status']
 </property>
@@ -3179,6 +3212,9 @@ AVERAGE
 </property>
 </object>
 <object id='poolNoVictimBuffer' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -3233,6 +3269,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='catCacheInserts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -3403,6 +3442,9 @@ AVERAGE
 </property>
 </object>
 <object id='totalCons' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -3515,6 +3557,9 @@ AVERAGE
 </property>
 </object>
 <object id='hashJoinOverflows' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -3656,6 +3701,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directReads' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -4145,6 +4193,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directWrites' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -4373,6 +4424,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='intCommits' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -4717,6 +4771,9 @@ AVERAGE
 </property>
 </object>
 <object id='locksHeld' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -4829,6 +4886,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='pkgCacheInserts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -4970,6 +5030,9 @@ AVERAGE
 </property>
 </object>
 <object id='privWorkspaceSectionInserts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5111,6 +5174,9 @@ AVERAGE
 </property>
 </object>
 <object id='poolAsyncDataReadReqs' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5218,6 +5284,9 @@ False
 <property type="boolean" id="hasSummary" mode="w" >
 True
 </property>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <tomanycont id='graphPoints'>
 <object id='rowsDeleted' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
 <property type="long" id="sequence" mode="w" >
@@ -5307,6 +5376,9 @@ AVERAGE
 </property>
 </object>
 <object id='rowsSelected' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5535,6 +5607,9 @@ AVERAGE
 </property>
 </object>
 <object id='selectSqlStmts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5676,6 +5751,9 @@ AVERAGE
 </property>
 </object>
 <object id='shrWorkspaceSectionInserts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5788,6 +5866,9 @@ AVERAGE
 </property>
 </object>
 <object id='postShrthresholdSorts' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
@@ -5903,6 +5984,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='directReadTime' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 AREA
 </property>
