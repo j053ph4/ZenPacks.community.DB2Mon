@@ -6250,8 +6250,14 @@ AVERAGE
 </object>
 <!-- ('', 'zport', 'dmd', 'Events', 'Status', 'DB2SrvInst') -->
 <object id='/zport/dmd/Events/Status/DB2SrvInst' module='Products.ZenEvents.EventClass' class='EventClass'>
+<property type="text" id="transform" mode="w" >
+setPDKey('appSuppDBServiceKey')
+</property>
 </object>
 <!-- ('', 'zport', 'dmd', 'Events', 'Status', 'DB2Tablespace') -->
 <object id='/zport/dmd/Events/Status/DB2Tablespace' module='Products.ZenEvents.EventClass' class='EventClass'>
+<property type="text" id="transform" mode="w" >
+setPDKey('appSuppDBServiceKey')
+</property>
 </object>
 </objects>
